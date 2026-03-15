@@ -20,12 +20,14 @@ const VideoPlayer = ({ videoId, title }) => {
       )}
       <iframe
         key={videoId}
-        src={`https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1&autoplay=0`}
+        src={`https://www.youtube-nocookie.com/embed/${videoId}?rel=0&modestbranding=1&autoplay=0&origin=${encodeURIComponent(window.location.origin)}`}
         title={title || 'Lesson Video'}
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
         allowFullScreen
+        referrerPolicy="no-referrer-when-downgrade"
         className="w-full h-full"
         onLoad={() => setLoaded(true)}
+        style={{ border: 'none' }}
       />
     </div>
   );
