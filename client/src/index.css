@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-950 text-slate-200 font-sans antialiased selection:bg-white/30 selection:text-white min-h-screen overflow-x-hidden;
+  }
+}
+
+.bg-mesh {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: -50;
+  background-color: #030508;
+  overflow: hidden;
+  pointer-events: none;
+}
+.bg-mesh::before, .bg-mesh::after {
+  content: '';
+  position: absolute;
+  width: 90vw; height: 90vw;
+  border-radius: 50%;
+  filter: blur(140px);
+  opacity: 0.25;
+  animation: mesh-float 25s infinite ease-in-out alternate;
+}
+.bg-mesh::before {
+  background: conic-gradient(from 90deg, #6366f1, #d946ef, #3b82f6);
+  top: -40%; left: -20%;
+}
+.bg-mesh::after {
+  background: conic-gradient(from 180deg, #14b8a6, #3b82f6, #8b5cf6);
+  bottom: -40%; right: -20%;
+  animation-delay: -12s;
+}
+
+@keyframes mesh-float {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  100% { transform: translate(10%, 15%) scale(1.1) rotate(25deg); }
+}
+
+@layer components {
+  .btn-primary {
+    @apply relative overflow-hidden bg-white text-dark-950 font-extrabold tracking-wide py-4 px-10 rounded-[2rem] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)] active:scale-95;
+  }
+  .btn-secondary {
+    @apply bg-white/5 backdrop-blur-xl border border-white/20 hover:bg-white/10 text-white font-bold tracking-wide py-4 px-10 rounded-[2rem] transition-all duration-300 hover:border-white/40 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)];
+  }
+  .card {
+    @apply bg-white/[0.03] backdrop-blur-[50px] border border-white/10 rounded-[2.5rem] shadow-[0_8px_32px_0_rgba(0,0,0,0.4)] transition-all duration-500 hover:bg-white/[0.05] hover:border-white/20;
+  }
+  .input-field {
+    @apply w-full bg-black/30 backdrop-blur-2xl border border-white/10 text-white placeholder-slate-500 font-medium rounded-[1.5rem] px-6 py-4 focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-transparent transition-all duration-300;
+  }
+  .btn-ghost {
+    @apply hover:bg-white/5 text-slate-300 hover:text-white font-medium py-2 px-5 rounded-full transition-all duration-200;
+  }
+  .glass {
+    @apply bg-white/[0.02] backdrop-blur-xl border border-white/10 rounded-[24px];
+  }
+  .sidebar-link {
+    @apply flex items-center gap-3 px-4 py-3 rounded-2xl text-slate-400 hover:text-white hover:bg-white/5 transition-all duration-200 font-medium w-full text-left;
+  }
+  .sidebar-link.active {
+    @apply text-white bg-white/10 border border-white/20 font-semibold shadow-[0_0_15px_rgba(255,255,255,0.05)];
+  }
+}
+
