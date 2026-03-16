@@ -123,11 +123,7 @@ const LearningPage = () => {
       {/* Main Layout */}
       <div className="flex flex-1 overflow-hidden relative">
         {/* Video + Controls */}
-        <div className="flex-1 flex flex-col overflow-y-auto p-4 lg:p-6">
-          {/* DEBUG INFO */}
-          <div className="bg-red-900/30 border border-red-500/50 p-2 rounded-xl mb-3 text-xs text-red-200">
-            DEBUG: LessonID: {currentLesson?._id} | YoutubeID: <span className="font-bold underline text-white">{currentLesson?.youtubeId || 'MISSING/EMPTY'}</span>
-          </div>
+        <div className="flex-1 min-w-0 flex flex-col overflow-y-auto p-4 lg:p-6">
 
           {/* Video Player */}
           <VideoPlayer videoId={currentLesson?.youtubeId} title={currentLesson?.title} />

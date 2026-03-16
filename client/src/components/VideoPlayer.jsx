@@ -24,7 +24,7 @@ const VideoPlayer = ({ videoId, title }) => {
   }
 
   return (
-    <div className="relative aspect-video rounded-2xl overflow-hidden bg-slate-900 shadow-2xl">
+    <div className="w-full relative pb-[56.25%] h-0 rounded-2xl overflow-hidden bg-slate-900 shadow-2xl">
       {!loaded && (
         <div className="absolute inset-0 flex items-center justify-center bg-slate-800 animate-pulse z-10">
           <div className="w-16 h-16 border-4 border-primary-500 border-t-transparent rounded-full animate-spin" />
@@ -37,7 +37,7 @@ const VideoPlayer = ({ videoId, title }) => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
         allowFullScreen
         referrerPolicy="no-referrer-when-downgrade"
-        className="w-full h-full"
+        className="absolute inset-0 w-full h-full"
         onLoad={() => setLoaded(true)}
         style={{ border: 'none' }}
       />
