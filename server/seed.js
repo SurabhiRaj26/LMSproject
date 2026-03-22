@@ -135,9 +135,9 @@ const seed = async () => {
 
     // Course 4: JavaScript
     { courseId: course4._id, title: 'JavaScript in 100 Seconds', order: 1, youtubeId: 'DHjqpvDnNGE', description: 'Variables, types, and operators overview' },
-    { courseId: course4._id, title: 'Functions and Scope', order: 2, youtubeId: 'gigiNQvX5UI', description: 'Functions, closures and scope chain' },
-    { courseId: course4._id, title: 'DOM Manipulation Crash Course', order: 3, youtubeId: 'y17RuWUpzLI', description: 'Select and modify HTML elements' },
-    { courseId: course4._id, title: 'JavaScript Full Course for Beginners', order: 4, youtubeId: 'PkZNo7MFOUg', description: 'Comprehensive basics guide' },
+    { courseId: course4._id, title: 'Functions and Scope', order: 2, youtubeId: 'Liv6eeb1VfE', description: 'Functions, closures and scope chain' },
+    { courseId: course4._id, title: 'DOM Manipulation Crash Course', order: 3, youtubeId: '5fb2aPlgoys', description: 'Select and modify HTML elements' },
+    { courseId: course4._id, title: 'JavaScript Full Course for Beginners', order: 4, youtubeId: 'PkZNo7MFNFg', description: 'Comprehensive basics guide' },
     { courseId: course4._id, title: 'Asynchronous JavaScript', order: 5, youtubeId: 'ZYb_ZU8LNxs', description: 'Promises, Async/Await and Fetch API' },
     { courseId: course4._id, title: 'ES6+ Features', order: 6, youtubeId: 'nZ1DMMsyVyI', description: 'Modern JavaScript features' },
 
@@ -145,14 +145,14 @@ const seed = async () => {
     { courseId: course5._id, title: 'Python in 100 Seconds', order: 1, youtubeId: 'x7X9w_GIm1s', description: 'Quick overview of Python' },
     { courseId: course5._id, title: 'Python Course for Beginners', order: 2, youtubeId: 'rfscVS0vtbw', description: 'Complete Python basics' },
     { courseId: course5._id, title: 'Object Oriented Programming in Python', order: 3, youtubeId: 'JeznW_7DlB0', description: 'OOP concepts in Python' },
-    { courseId: course5._id, title: 'Python Automation Tutorial', order: 4, youtubeId: 'PXMJBEBiEYM', description: 'Automate tasks with Python' },
+    { courseId: course5._id, title: 'Python Automation Tutorial', order: 4, youtubeId: 'H2EJuAcrZYU', description: 'Automate tasks with Python' },
     { courseId: course5._id, title: 'Build a Complete API with FastAPI', order: 5, youtubeId: '0sOvCWFmrtA', description: 'Python API Development' },
 
     // Course 6: Data Science
     { courseId: course6._id, title: 'Learn Data Science Tutorial', order: 1, youtubeId: 'ua-CiDNNj30', description: 'Introduction to Data Science' },
-    { courseId: course6._id, title: 'Pandas Data Analysis', order: 2, youtubeId: 'zyGJVix52DQ', description: 'Data manipulation with Pandas' },
+    { courseId: course6._id, title: 'Pandas Data Analysis', order: 2, youtubeId: 'gtjxAH8uaP0', description: 'Data manipulation with Pandas' },
     { courseId: course6._id, title: 'NumPy Tutorial', order: 3, youtubeId: 'QUT1VHiLmmI', description: 'Numerical computing with Python' },
-    { courseId: course6._id, title: 'Matplotlib Crash Course', order: 4, youtubeId: '3Xc3CA655Ls', description: 'Data Visualization' },
+    { courseId: course6._id, title: 'Matplotlib Crash Course', order: 4, youtubeId: 'vmEHCJofslg', description: 'Data Visualization' },
     { courseId: course6._id, title: 'Machine Learning for Everybody', order: 5, youtubeId: 'i_LwzRmA_08', description: 'Intro to predictive models' },
   ];
 
