@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import Navbar from './components/Navbar';
+import Chatbot from './components/Chatbot';
 
 // Pages
 import Home from './pages/Home';
@@ -54,6 +55,7 @@ const App = () => {
     <BrowserRouter>
       <AuthProvider>
         <AppRoutes />
+        <Chatbot />
         <Toaster
           position="top-right"
           toastOptions={{

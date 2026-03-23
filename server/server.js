@@ -19,6 +19,7 @@ app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/courses', require('./routes/courseRoutes'));
 app.use('/api/lessons', require('./routes/lessonRoutes'));
 app.use('/api/progress', require('./routes/progressRoutes'));
+app.use('/api/chat', require('./routes/chatRoutes'));
 
 // Serve Static Assets in Production
 if (process.env.NODE_ENV === 'production') {
